@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
-import { StatusBar, View } from 'react-native';
-import ScoreScreen from './ScoreScreen/ScoreScreen';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack'
 
-class Main extends Component {
+import ScoreScreen from './ScoreScreen/ScoreScreen';
+import InfoScreen from './InfoScreen/InfoScreen';
+
+export default class Main extends Component {
     render() {
         return (
-            <View>
-                <StatusBar hidden />
-                <ScoreScreen />
-            </View>
+            <AppContainer />
         );
     }
 }
 
-export default Main;
+const AppNavigator = createStackNavigator({
+    ScoreScreen: {
+        screen: ScoreScreen,
+        navigationOptions: {
+            title: 'ScoreScreen',
+            headerShown: false
+        }
+    },
+    InfoScreen: {
+        screen: InfoScreen
+    }
+});
+
+const AppContainer = createAppContainer(AppNavigator);

@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default class ScoreScreen extends Component {
+class InfoScreen extends Component {
   render() {
       return(
         <View style={styles.container}>
-            <Text>Score Keeper</Text>
-            <Button
-                title = "Info Screen"
-                onPress = {() => this.props.navigation.navigate("InfoScreen")}
-            />
+            <Text>Score Now: </Text>
+            <Text>5</Text>
         </View>
       );
   }
@@ -23,3 +20,5 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
 });
+
+export default InfoScreen;

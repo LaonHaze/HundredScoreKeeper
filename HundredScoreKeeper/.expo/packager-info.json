@@ -1,9 +1,10 @@
 {
-  "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 2380,
+  "packagerPid": 5624,
   "expoServerNgrokUrl": "https://av-8gh.jban0811.hundredscorekeeper.exp.direct",
   "packagerNgrokUrl": "https://packager.av-8gh.jban0811.hundredscorekeeper.exp.direct",
-  "ngrokPid": 16248
+  "ngrokPid": 21780,
+  "devToolsPort": 19002,
+  "webpackServerPort": 19006
 }
